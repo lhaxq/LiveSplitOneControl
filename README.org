@@ -5,7 +5,7 @@ Control LiveSplit One with shell commands that can be bound to hotkeys using som
 * Usage
 
 1. Install =websocketd= using your favourite package manager.
-2. Execute =./run.sh= in a terminal which starts a websocket (usually at =ws://localhost:80=).
+2. Execute =./start.sh= in a terminal which starts a websocket (usually at =ws://localhost:80=).
 3. Use the =connect= button in LiveSplit One to connect to that address (I've only gotten this to work in my local version of LiveSplit One, if you figure out how to do this in the web version, please let me know and I'll add it here).
 4. To execute an action in LiveSplit, use a shell command of the form: =echo cmd > /tmp/livesplitcontrol= where =cmd= can be =startorsplit=, =reset=, =undo= and =skip= (there are more, but I forgot where to look for them).
 5. Bind those commands to hotkeys using =skhd= (MacOS) or =sxhkd= (Linux) or something else. For example =lctrl + shift - space : echo splitorstart > /tmp/livesplitcontrol= to split in =skhd=.
